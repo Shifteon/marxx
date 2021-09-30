@@ -1,0 +1,69 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    background-color: #7a2843;
+    color: white;
+
+    padding: .75em;
+}
+
+#navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation li {
+    display: none;
+    font-size: 1.25em;
+    padding: .3em;
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+#navigation li:first-of-type {
+    display: block;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    justify-self: end;
+    align-self: start;
+    width: 70%;
+}
+
+#logo img {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero div h2 {
+    margin: 0;
+}
+
+.hero button {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+
+    padding: .5em;
+    border-radius: 1em;
+    border: none;
+}
