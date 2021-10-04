@@ -36,8 +36,17 @@
         display: none;
     }
 
+    #navigation li:hover {
+        background-color: #7a2843;
+    }
+
+    #navigation li a:hover {
+        color: white;
+    }
+
     #navigation li a {
         color: #7a2843;
-        padding: 1em;
+        width: 100%;
+        display: block;
     }
 }
