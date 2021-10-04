@@ -48,7 +48,7 @@
 
     #navigation li:hover {
         background-color: #7a2843;
-        box-shadow: 3px 3px 3px lightgray;
+        /* box-shadow: 3px 5px 3px lightgray; */
     }
 
     #navigation li a:hover {
@@ -60,5 +60,30 @@
         width: 100%;
         height: 100%;
         display: block;
+    }
+
+    .hero {
+        height: fit-content;
+        grid-template-rows: 1fr;
+    }
+
+    .hero picture {
+        grid-row: 1/-1;
+        grid-column: 1/-1;
+    }
+
+    .hero .content-box {
+        display: block;
+        width: 100%;
+        height: 10em;
+        text-align: center;
+        background-color: #CDC3BB;
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        align-self: end;
+    }
+
+    .hero #small-btn {
+        display: none;
     }
 }
