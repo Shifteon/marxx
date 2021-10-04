@@ -108,7 +108,7 @@ header#main-header {
     grid-row: 1/-1;
     grid-column: 1/-1;
 
-    transition: 1s;
+    transition: .5s;
 }
 
 .content.blurred img {
@@ -125,7 +125,7 @@ header#main-header {
 
     z-index: 100;
     /* display: none; */
-    transition: 1s;
+    transition: .5s;
 }
 
 .content.blurred div p {
