@@ -52,7 +52,11 @@
             </section>
         </header>
         <section class="hero">
-            <img src="images/Model425.jpg" alt="banner">
+            <picture>
+                <source media="(max-width: 425px)" srcset="images/Model425.jpg">
+                <source media="(max-width: 1024px)" srcset="images/Model1920.jpg">
+                <img src="images/Model1920.jpg" alt="Male model wearing marxx hoodie">
+            </picture>
             <a href="products.html" class="button">Buy Now</a>
         </section>
         <section class="content">
