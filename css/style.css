@@ -27,6 +27,10 @@ header#main-header {
     padding: .3em;
 }
 
+#navigation li.active {
+    border: 1px solid white;
+}
+
 #navigation.responsive li {
     display: block;
 }
@@ -38,6 +42,10 @@ header#main-header {
 #navigation a {
     text-decoration: none;
     color: white;
+}
+
+#shopping-cart {
+    margin-left: .25em;
 }
 
 #logo {
@@ -61,7 +69,7 @@ header#main-header {
     grid-row: 1/-1;
 }
 
-.hero a {
+.button {
     grid-row: 3/4;
     grid-column: 1/-1;
     align-self: end;
@@ -84,7 +92,7 @@ header#main-header {
     cursor: pointer;
 }
 
-.hero a:hover {
+.button:hover {
     background-color: white;
     color: #7a2843;
 }
@@ -124,6 +132,35 @@ header#main-header {
     /* display: block; */
     text-shadow: black;
     color: white;
+}
+
+#shop-now div img {
+    width: 100%;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+}
+
+#shop-now .content-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#shop-now div h3 {
+    color: white;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+#shop-now .content-box div {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+#shop-now .content-box div .button {
+    margin: 0;
 }
 
 /* Products styles */
