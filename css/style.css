@@ -75,6 +75,12 @@ header#main-header {
     grid-row: 1/-1;
 }
 
+.hero picture {
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
 .hero .content-box {
     display: none;
 }
