@@ -64,7 +64,7 @@
 
     .hero {
         height: fit-content;
-        grid-template-rows: repeat(2, 50%);
+        grid-template-rows: 60% 40%;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -73,21 +73,30 @@
         grid-column: 1/-1;
     }
 
-    .hero img {
+    /* .hero img {
         height: 70%;
-    }
+    } */
 
     .hero .content-box {
         display: block;
-        width: 60%;
+        width: 70%;
         height: 10em;
         text-align: center;
         /* background-color: rgba(0,0,0,.3); */
         color: white;
         grid-row: 1/2;
         grid-column: 2/3;
-        align-self: center;
+        align-self: end;
         justify-self: center;
+    }
+
+    .hero .content-box h2 {
+        font-size: 2em;
+    }
+
+    .hero .content-box .button {
+        font-size: 1.5em;
+        padding: .5em 1em;
     }
 
     .hero #small-btn {

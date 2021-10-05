@@ -9,8 +9,10 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/large.css">
+
         <script src="js/main.js"></script>
-        <script src="js/blur.js"></script>
+        <script src="js/order.js"></script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -42,8 +44,8 @@
                             </span>
                         </a>
                     </li>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Hoodies</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="order.html">Hoodies</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -53,20 +55,47 @@
         </header>
         <main>
             <section id="progress-bar">
-                
+                <div id="bars">
+                    <div class="progress filled"></div>
+                    <div class="progress"></div>
+                    <div class="progress"></div>
+                </div>
+                <div id="progress-labels">
+                    <h4>1. Choose Design</h4>
+                    <h4>2. Choose Color</h4>
+                    <h4>3. Choose Size</h4>
+                </div>
             </section>
             <section id="product-image">
                 <img src="images/hoodies/teton-black425.jpg" alt="Cool hoodie">
             </section>
-            <label>
-                <input type="radio" name="test" value="small" checked>
-                <img src="http://placehold.it/40x60/0bf/fff&text=A">
-            </label>
-
-            <label>
-                <input type="radio" name="test" value="big">
-                <img src="http://placehold.it/40x60/b0f/fff&text=B">
-            </label>
+            <section id="product-selection">
+                <label>
+                    <input type="radio" name="test" value="arches" oninput="changeImage(this.value)" checked>
+                    <img src="images/designs/arches.png">
+                </label>
+                <label>
+                    <input type="radio" name="test" value="dunes" oninput="changeImage(this.value)">
+                    <img src="images/designs/dunes.png">
+                </label>
+                <label>
+                    <input type="radio" name="test" value="golden-gate" oninput="changeImage(this.value)">
+                    <img src="images/designs/golden-gate.png">
+                </label>
+                <label>
+                    <input type="radio" name="test" value="old-faithful-blue" oninput="changeImage(this.value)">
+                    <img src="images/designs/old-faithful-blue.png">
+                </label>
+                <label>
+                    <input type="radio" name="test" value="old-faithful" oninput="changeImage(this.value)">
+                    <img src="images/designs/old-faithful.png">
+                </label>
+                <label>
+                    <input type="radio" name="test" value="tetons" oninput="changeImage(this.value)">
+                    <img src="images/designs/tetons.png">
+                </label>
+            </section>
+            <button id="product-next" class="button">Next</button>
         </main>
         <footer>
             <section id="footer-content">
