@@ -14,7 +14,7 @@ function blur() {
     let options = {
         root: null,
         rootMargin: '0px',
-        threshold: .75
+        threshold: .90
     }
     let observer = new IntersectionObserver(callback, options);
 
