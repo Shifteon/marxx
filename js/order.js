@@ -36,7 +36,7 @@ function build(values, type, parent) {
     main.insertBefore(parent, button);
 }
 
-const designs = ["arches", "dunes", "goldengate", "oldfaithfulblue", "oldfaithful", "tetons"];
+const designs = ["arches", "dunes", "goldengate", "tetons"];
 const colors = ["black", "white", "maroon", "sand"];
 
 window.addEventListener('load', () => {
@@ -50,6 +50,7 @@ window.addEventListener('load', () => {
         switch (step) {
             case 1:
                 build(colors, "Color", parent);
+                document.querySelector("#progress-color").classList.add('filled')
                 step++;
                 break;
             default:
