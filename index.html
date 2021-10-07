@@ -67,7 +67,11 @@
             <section class="content">
                 <!-- <h2>Located At The BYUI McKay Amphitheater</h2> -->
                 <div>
-                    <img src="images/teton_model.jpg" alt="Black Teton Hoodie">
+                    <picture>
+                        <source media="(max-width: 426px)" srcset="images/teton_model.jpg">
+                        <source media="(min-width: 1024px)" srcset="images/teton_model1000.jpg">
+                    </picture>
+                    <img src="images/teton_model1000.jpg" alt="Black Teton Hoodie">
                     <p>Designing a warm, quality hoodie that reminds you of the adventures of life</p>
                 </div>
             </section>

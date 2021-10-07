@@ -17,3 +17,31 @@ function changeImage(type) {
         image.setAttribute('src', imageSrc);
     }
 }
+
+function buildDesign() {
+    const designs = ["arches", "dunes", "golden-gate", "old-faithful-blue", "old-faithful", "tetons"];
+    const main = document.querySelector('#hoodie-main');
+    const button = document.querySelector('#product-next');
+
+    let parent = document.createElement('section');
+    parent.id = "product-selection";
+
+    for (design of designs) {
+        let content = document.createElement('label');
+        content.innerHTML =`
+        <input type="radio" name="test" value="${design}" oninput="changeImage(this.value)" checked>
+        <img src="images/designs/${design}.jpg">`;
+
+        parent.appendChild(content);
+    }
+
+    main.insertBefore(parent, button)
+}
+
+function buildColor() {
+
+}
+
+window.addEventListener('load', () => {
+    buildDesign();
+});

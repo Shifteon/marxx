@@ -113,13 +113,57 @@
     .content img {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 600px;
+        width: 650px;
         align-self: center;
+        justify-self: center;
     }
 
     .content div p {
         grid-column: 2/3;
         grid-row: 1/2;
+        color: black;
+        width: 700px;
+        justify-self: center;
+    }
+
+    .info-box {
+        margin: 1em 1em;
+    }
+
+    .info-box h2 {
+        font-size: 3em;
+    }
+
+    .info-box p {
+        font-size: 1.5em;
+    }
+
+    #shop-now {
+        margin: 1em 1em;
+    }
+
+    #shop-now .content-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #shop-now .content-box img {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: center;
+
+        width: 650px;
+    }
+
+    #shop-now .content-box div {
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        /* background-color: #EBEBEB; */
+    }  
+    
+    #shop-now .content-box div h3 {
         color: black;
     }
 }
