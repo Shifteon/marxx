@@ -328,7 +328,7 @@ footer .copyright {
     width: 95%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(16.5%, 20%));
     grid-gap: .5em;
 }
 
