@@ -25,5 +25,6 @@ function blur() {
 }
 
 window.addEventListener('load', () => {
-    blur();
+    if (window.innerWidth < 1024)
+        blur();
 });

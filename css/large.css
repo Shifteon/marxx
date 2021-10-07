@@ -102,4 +102,24 @@
     .hero #small-btn {
         display: none;
     }
+
+    .content div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 1em 1em;
+    }
+
+    .content img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 600px;
+        align-self: center;
+    }
+
+    .content div p {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        color: black;
+    }
 }
