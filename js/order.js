@@ -25,13 +25,13 @@ function changeImage() {
 
     let imageSrc = `images/hoodies/${design}_${color}.jpg`;
     image.setAttribute('src', imageSrc);
-    image.setAttribute('')
 }
 
 function overlaySize() {
-
+    return;
 }
 
+// Create the radios for people to select
 function build(values, type, parent) {
     const main = document.querySelector('#hoodie-main');
     const button = document.querySelector('#product-next');
@@ -69,6 +69,7 @@ window.addEventListener('load', () => {
 
     build(designs, "Design", parent);
 
+    // Move to the next step
     let button = document.querySelector('#product-next');
     button.addEventListener("click", () => {
         switch (step) {
