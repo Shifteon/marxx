@@ -61,7 +61,7 @@ function build(values, type, parent) {
 
 const designs = ["arches", "dunes", "goldengate", "tetons"];
 const colors = ["black", "white", "maroon", "sand"];
-const sizes = ["medium", "large", "xlarge", "xxlarge"];
+// const sizes = ["medium", "large", "xlarge", "xxlarge"];
 
 window.addEventListener('load', () => {
     let parent = document.createElement('section');
@@ -82,10 +82,18 @@ window.addEventListener('load', () => {
                 step++;
                 break;
             case 2:
-                build(sizes, "Size", parent);
-                document.querySelector("#progress-size").classList.add('in-progress');
+                button.textContent = "Purchase Now";
+                document.querySelector("#progress-purchase").classList.add('in-progress');
                 document.querySelector("#progress-color").classList.add('filled');
                 document.querySelector("#progress-color").classList.remove('in-progress');
+                step++;
+                break;
+            case 3:
+                window.open(
+                    "https://commerce.cashnet.com/cashnetg/selfserve/BrowseCatalog.aspx",
+                    '_blank'
+                );
+                break;
             default:
                 break;
         }
