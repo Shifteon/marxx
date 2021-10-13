@@ -90,7 +90,7 @@ window.addEventListener('load', () => {
                 break;
             case 3:
                 window.open(
-                    "https://commerce.cashnet.com/cashnetg/selfserve/BrowseCatalog.aspx",
+                    "http://commerce.cashnet.com/ibcbol",
                     '_blank'
                 );
                 break;
