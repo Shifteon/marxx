@@ -59,8 +59,8 @@ function build(values, type, parent) {
     grid.style.gridTemplateColumns = `repeat(${values.length}, 1fr)`;
 }
 
-const designs = ["arches", "outline_arches", "outline_dunes", "goldengate", "tetons", "outline_tetons", "seattle", "oldfaithful", "outline_oldfaithful"];
-const colors = ["black", "white", "maroon", "sand"];
+const designs = ["arches", "outline_arches", "goldengate", "tetons", "outline_tetons", "seattle", "oldfaithful", "outline_oldfaithful"];
+const colors = ["black", "white", "maroon", "sand", "gray"];
 // const sizes = ["medium", "large", "xlarge", "xxlarge"];
 
 window.addEventListener('load', () => {

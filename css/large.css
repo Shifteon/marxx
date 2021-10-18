@@ -110,7 +110,7 @@
         height: 10em;
         text-align: center;
         /* background-color: rgba(0,0,0,.3); */
-        color: #FC9E4F;
+        color: black;
         grid-row: 2/3;
         grid-column: 1/3;
         align-self: center;
