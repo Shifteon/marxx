@@ -59,7 +59,7 @@ function build(values, type, parent) {
     grid.style.gridTemplateColumns = `repeat(${values.length}, 1fr)`;
 }
 
-const designs = ["arches", "outline_arches", "goldengate", "tetons", "outline_tetons", "seattle", "oldfaithful", "outline_oldfaithful"];
+const designs = ["arches", "outline_arches", "goldengate", "tetons", "outline_tetons", "seattle", "oldfaithful"];
 const colors = ["black", "white", "maroon", "sand", "gray"];
 // const sizes = ["medium", "large", "xlarge", "xxlarge"];
 
@@ -90,7 +90,7 @@ window.addEventListener('load', () => {
                 break;
             case 3:
                 window.open(
-                    "http://commerce.cashnet.com/ibcbol",
+                    "https://commerce.cashnet.com/cashnetg/selfserve/BrowseCatalog.aspx",
                     '_blank'
                 );
                 break;
