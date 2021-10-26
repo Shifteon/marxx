@@ -13,7 +13,7 @@ header#main-header {
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
-    background-color: #7a2843;
+    background-color: #1C4E5F;
     color: white;
 
     padding: .75em;
@@ -81,7 +81,7 @@ nav {
 }
 
 footer {
-    background-color: #EBEBEB;
+    background-color: #1C4E5F;
     padding: 1em;
 }
 
@@ -94,12 +94,13 @@ footer .contact p {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     padding: 0 .5em;
+    color: white
 }
 
 footer .contact a {
     display: block;
     padding: .5em .5em;
-    color: black;
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -117,7 +118,7 @@ footer .social img {
 }
 
 footer .copyright {
-    color: black;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 0;
@@ -150,7 +151,7 @@ footer .copyright {
     align-self: end;
     justify-self: center;
 
-    background-color: #7a2843;
+    background-color: #838B4B;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -170,7 +171,7 @@ footer .copyright {
 
 .button:hover {
     background-color: white;
-    color: #7a2843;
+    color: #1F333C;
 }
 
 .content div {
@@ -212,7 +213,7 @@ footer .copyright {
 
 .info-box {
     text-align: center;
-    background-color: #EBEBEB;
+    background-color: #1F333C;
     /* width: 90%; */
     margin: 1em auto;
     padding: .5em;
@@ -222,12 +223,14 @@ footer .copyright {
     margin-bottom: 0;
     margin-top: .3em;
     font-family: 'Playfair Display', serif;
+    color: white
 }
 
 .info-box p {
     /* text-align: left; */
     font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
+    color: white
     /* margin: .2em; */
 }
 
@@ -267,7 +270,7 @@ footer .copyright {
 
 /* Products styles */
 .products-header {
-    background-color: #CDC3BB;
+    background-color: #1F333C;
     text-align: center;
     padding: 1em;
     /* border-radius: 1.5em;
@@ -355,7 +358,7 @@ footer .copyright {
 
 #product-selection img {
     width: 100%;
-    border: 1px solid lightgray;
+    border: 1px solid #1F333C;
 }
 
 #product-next {
@@ -363,7 +366,7 @@ footer .copyright {
     margin: 1em auto;
     width: 10em;
     display: block;
-    border: 1px solid #7a2843;
+    border: 1px solid #838B4B;
 }
 
 /* HIDE RADIO */
