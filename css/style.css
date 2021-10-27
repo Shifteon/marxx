@@ -58,16 +58,6 @@ nav {
     color: white;
 }
 
-#shopping-cart {
-    grid-row: 1/2;
-    grid-column: 3/4;
-    margin-right: .3em;
-}
-
-#shopping-cart a {
-    color: white;
-}
-
 #logo {
     justify-self: center;
     align-self: start;
@@ -80,6 +70,10 @@ nav {
     width: 100%;
 }
 
+#nav-phone {
+    display: none;
+}
+
 footer {
     background-color: #1C4E5F;
     padding: 1em;
@@ -88,6 +82,7 @@ footer {
 #footer-content {
     display: grid;
     grid-template-columns: 1fr;
+    color: white;
 }
 
 footer .contact p {
@@ -105,8 +100,8 @@ footer .contact a {
 }
 
 footer .social {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     /* margin-top: 1em; */
     width: fit-content;
     justify-self: end;
@@ -117,11 +112,20 @@ footer .social img {
     width: 3.75em;
 }
 
-footer .copyright {
+#footer-extra {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer .copyright, footer .signature {
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 0;
+}
+
+footer .signature a {
+    color: white;
 }
 
 .hero {
@@ -350,10 +354,10 @@ footer .copyright {
 
 #product-selection {
     width: 95%;
-    margin: 0 auto;
+    margin: 1em auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: .5em;
+    grid-gap: 1em;
 }
 
 #product-selection img {

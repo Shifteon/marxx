@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="waypoint is a company dedicated to connecting people to home through comfortable clothing such as waypoint hoodies and other signature lines. We are located at the Brigham Young University Idaho (BYUI) campus in Rexburg, Idaho.">
+        <meta name="description"
+            content="waypoint is a company dedicated to connecting people to home through comfortable clothing such as waypoint hoodies and other signature lines. We are located at the Brigham Young University Idaho (BYUI) campus in Rexburg, Idaho.">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
@@ -29,11 +30,14 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210098782-1"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'UA-210098782-1');
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-210098782-1');
         </script>
         <title>Home | WAYPOINT</title>
     </head>
@@ -54,13 +58,9 @@
             <section id="logo">
                 <a href="index.html"><img src="images/waypoint_logo_long.png" alt="logo"></a>
             </section>
-            <!-- <section id="shopping-cart">
-                <a href="#">
-                    <span class="material-icons-outlined">
-                        shopping_cart
-                    </span>
-                </a>
-            </section> -->
+            <section id="nav-phone">
+                <a href="tel:(208)557-3186">(208)557-3186</a>
+            </section>
         </header>
         <main>
             <section class="hero">
@@ -120,19 +120,32 @@
         </main>
         <footer>
             <section id="footer-content">
+                <section id="footer-logo">
+                    <img src="" alt="">
+                </section>
+                <section class="location">
+                    <h3>Located at:</h3>
+                    <p>McKay Quad Amphitheatre <br>
+                        294 S 1st E, <br>
+                        Rexburg, ID 83460</p>
+                </section>
                 <section class="contact">
-                    <p>About Waypoint</p>
-                    <a href="tel:‪(208)557-3186‬">‪(208)557-3186‬</a>
+                    <h3>Email us:</h3>
                     <a href="mailto:waypoint.wardrobe@gmail.com">waypoint.wardrobe@gmail.com</a>
+                    <h3>Call or text:</h3>
+                    <a href="tel:‪(208)557-3186‬">‪(208)557-3186‬</a>
                 </section>
                 <section class="social">
-                    <a href="https://www.facebook.com/Marxx-102078028918034" target="_blank"><img src="images/facebookicon200.png"
-                            alt="Facebook logo"></a>
-                    <a href="https://www.instagram.com/waypoint.wear/" target="_blank"><img src="images/instaicon200.png"
-                            alt="Instagram logo"></a>
+                    <a href="https://www.facebook.com/Marxx-102078028918034" target="_blank"><img
+                            src="images/facebookicon200.png" alt="Facebook logo"></a>
+                    <a href="https://www.instagram.com/waypoint.wear/" target="_blank"><img
+                            src="images/instaicon200.png" alt="Instagram logo"></a>
                 </section>
             </section>
-            <p class="copyright">&copy;2021 WAYPOINT</p>
+            <section id="footer-extra">
+                <p class="copyright">&copy;2021 WAYPOINT</p>
+                <p class="signature">Built by <a href="" target="_blank">Benjamin Wyatt</a></p>
+            </section>
         </footer>
     </body>
 

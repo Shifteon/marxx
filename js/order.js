@@ -55,8 +55,8 @@ function build(values, type, parent) {
 
     main.insertBefore(parent, button);
 
-    let grid = document.querySelector('#product-selection');
-    grid.style.gridTemplateColumns = `repeat(${values.length}, 1fr)`;
+    // let grid = document.querySelector('#product-selection');
+    // grid.style.gridTemplateColumns = `repeat(4, 1fr)`;
 }
 
 const designs = ["arches", "outline_arches", "goldengate", "tetons", "outline_tetons", "seattle", "oldfaithful", "outline_oldfaithful", "lights"];
