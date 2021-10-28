@@ -85,6 +85,10 @@ footer {
     color: white;
 }
 
+#footer-content .location a {
+    color: white;
+}
+
 #footer-logo {
     text-align: center;
 }
