@@ -27,14 +27,17 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,700&display=swap"
             rel="stylesheet">
-            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210098782-1"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'UA-210098782-1');
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-210098782-1');
         </script>
         <title>Hoodie | WAYPOINT</title>
     </head>
@@ -77,6 +80,9 @@
             </section>
             </section>
             <button id="product-next" class="button">Next</button>
+            <section class="modal">
+
+            </section>
         </main>
         <footer>
             <section id="footer-content">
@@ -88,6 +94,8 @@
                     <p>McKay Quad Amphitheatre <br>
                         294 S 1st E, <br>
                         Rexburg, ID 83460</p>
+                    <h3>Hours:</h3>
+                    <p class="montserrat">M-F: 11-2</p>
                 </section>
                 <section class="contact">
                     <h3>Email us:</h3>
@@ -104,7 +112,8 @@
             </section>
             <section id="footer-extra">
                 <p class="copyright">&copy;2021 WAYPOINT</p>
-                <p class="signature">Built by <a href="https://shifteon.github.io/Portfolio/" target="_blank">Benjamin Wyatt</a></p>
+                <p class="signature">Built by <a href="https://shifteon.github.io/Portfolio/" target="_blank">Benjamin
+                        Wyatt</a></p>
             </section>
         </footer>
     </body>
