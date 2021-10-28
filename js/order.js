@@ -1,7 +1,7 @@
 var design = "arches";
 var color = "black";
 var size = "medium"
-var step = 1;
+var step = 0;
 
 var isDirty = false;
 
@@ -17,7 +17,6 @@ function setColor(value) {
 
 function setSize(value) {
     size = value;
-    overlaySize();
 } 
 
 function changeImage() {
@@ -25,10 +24,6 @@ function changeImage() {
 
     let imageSrc = `images/hoodies/${design}_${color}.jpg`;
     image.setAttribute('src', imageSrc);
-}
-
-function overlaySize() {
-    return;
 }
 
 // Create the radios for people to select
@@ -63,40 +58,67 @@ const designs = ["arches", "outline_arches", "goldengate", "tetons", "outline_te
 const colors = ["black", "white", "maroon", "sand", "gray"];
 // const sizes = ["medium", "large", "xlarge", "xxlarge"];
 
+function callBuild(parent) {
+    switch (step) {
+        case 0:
+            build(designs, "Design", parent);
+            document.querySelector("#progress-color").classList.remove('in-progress');
+            document.querySelector("#progress-color").classList.remove('filled');
+            document.querySelector("#progress-purchase").classList.remove('in-progress');
+            document.querySelector("#progress-purchase").classList.remove('filled');
+            document.querySelector("#progress-design").classList.remove('filled');
+            document.querySelector("#progress-design").classList.add('in-progress');
+            step++;
+            break;
+        case 1:
+            isDirty = true;
+            build(colors, "Color", parent);
+            document.querySelector("#progress-color").classList.add('in-progress');
+            document.querySelector("#progress-design").classList.add('filled');
+            document.querySelector("#progress-design").classList.remove('in-progress');
+            document.querySelector("#progress-purchase").classList.remove('in-progress');
+            document.querySelector("#progress-purchase").classList.remove('filled');
+            step++;
+            break;
+        case 2:
+            // button.textContent = "Purchase Now";
+            document.querySelector("#progress-purchase").classList.add('in-progress');
+            document.querySelector("#progress-color").classList.add('filled');
+            document.querySelector("#progress-color").classList.remove('in-progress');
+            step++;
+            break;
+        case 3:
+            window.open(
+                "https://commerce.cashnet.com/IBCBOL",
+                '_blank'
+            );
+            break;
+        default:
+            break;
+    }
+}
+
 window.addEventListener('load', () => {
     let parent = document.createElement('section');
     parent.id = "product-selection";
 
-    build(designs, "Design", parent);
+    callBuild(parent);
 
     // Move to the next step
     let button = document.querySelector('#product-next');
     button.addEventListener("click", () => {
-        switch (step) {
-            case 1:
-                isDirty = true;
-                build(colors, "Color", parent);
-                document.querySelector("#progress-color").classList.add('in-progress');
-                document.querySelector("#progress-design").classList.add('filled');
-                document.querySelector("#progress-design").classList.remove('in-progress');
-                step++;
-                break;
-            case 2:
-                button.textContent = "Purchase Now";
-                document.querySelector("#progress-purchase").classList.add('in-progress');
-                document.querySelector("#progress-color").classList.add('filled');
-                document.querySelector("#progress-color").classList.remove('in-progress');
-                step++;
-                break;
-            case 3:
-                window.open(
-                    "https://commerce.cashnet.com/IBCBOL",
-                    '_blank'
-                );
-                break;
-            default:
-                break;
-        }
+        callBuild(parent)
+    });
+
+    let progressDesign = document.querySelector("#progress-design");
+    progressDesign.addEventListener('click', () => {
+        step = 0;
+        callBuild(parent);
+    });
+    let progressColor = document.querySelector("#progress-color");
+    progressColor.addEventListener('click', () => {
+        step = 1;
+        callBuild(parent);
     });
 });
 

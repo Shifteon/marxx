@@ -47,20 +47,15 @@
 
     #navigation li.active {
         border: none;
-        background-color: white;
+        color: #FFFFFF;
     }
 
     #navigation li.active a {
-        color: #1C4E5F;
-    }
-
-    #navigation li:hover {
-        background-color: white;
-        /* box-shadow: 3px 5px 3px lightgray; */
+        color: #C1C5A5;
     }
 
     #navigation li a:hover {
-        color: #1C4E5F;
+        color: #C1C5A5;
     }
 
     #navigation li a {
@@ -77,7 +72,7 @@
     }
 
     #nav-phone a {
-        color: white;
+        color: #C1C5A5;
         font-family: 'Montserrat', sans-serif;
         text-decoration: none;
         font-size: 1.25em;
@@ -87,6 +82,14 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-items: center;
         align-items: start;
+    }
+
+    #footer-logo {
+        text-align: center;
+    }
+
+    #footer-logo img {
+        width: 60%;
     }
 
     #footer-content .contact a {
@@ -99,6 +102,24 @@
 
     #footer-content .social {
         align-self: end;
+        justify-self: end;
+    }
+
+    #footer-extra {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #footer-extra .copyright, #footer-extra .signature {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #footer-extra .signature {
         justify-self: end;
     }
 

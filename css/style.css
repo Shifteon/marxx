@@ -85,6 +85,14 @@ footer {
     color: white;
 }
 
+#footer-logo {
+    text-align: center;
+}
+
+#footer-logo img {
+    width: 50%;
+}
+
 footer .contact p {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -94,7 +102,7 @@ footer .contact p {
 
 footer .contact a {
     display: block;
-    padding: .5em .5em;
+    /* padding: .5em .5em; */
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -102,9 +110,9 @@ footer .contact a {
 footer .social {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* margin-top: 1em; */
+    margin-top: 1em;
     width: fit-content;
-    justify-self: end;
+    justify-self: start;
     align-self: center;
 }
 
@@ -118,12 +126,14 @@ footer .social img {
 }
 
 #footer-extra .copyright, #footer-extra .signature {
-    grid-column: 1/2;
-    grid-row: 1/2;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 0;
+}
+
+#footer-extra .copyright {
+    grid-row: 2/3;
 }
 
 #footer-extra .signature a {
@@ -131,7 +141,8 @@ footer .social img {
 }
 
 #footer-extra .signature {
-    justify-self: end;
+    grid-row: 1/2;
+    justify-self: center;
 }
 
 .hero {
@@ -319,6 +330,7 @@ footer .social img {
     grid-template-columns: 1fr 1fr 1fr;
     height: 1em;
     justify-content: center;
+    cursor: pointer;
 }
 
 .progress {
