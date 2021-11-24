@@ -129,7 +129,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .hero picture {
+    .hero video {
         grid-row: 1/-1;
         grid-column: 1/-1;
     }
